@@ -40,5 +40,7 @@ public class Main {
         float noteChercher = scanner.nextFloat();
         int occurence = noteEtudiant.occurenceNote(noteChercher);
         System.out.println("Le nombre d'etudiants ayant la note " + noteChercher + " est: " + occurence);
+
+        scanner.close();
     }
 }

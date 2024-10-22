@@ -1,6 +1,5 @@
 package com.POO_Java.Exercice2;
 
-import com.POO_Java.Exercice1.NoteEtudiant;
 
 import java.util.Scanner;
 
@@ -14,5 +13,7 @@ public class Main {
         for(String str:verbeConjuguer){
             System.out.println(str);
         }
+
+        scanner.close();
     }
 }

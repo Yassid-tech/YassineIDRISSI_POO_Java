@@ -99,16 +99,22 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 
 #### Exercise 3: String Manipulation
 
+<img src="images/Screenshot9.png" alt="Image" width="600">
+
 1. **Creation of the `StringManipulator` Class:**  
    This class includes methods to reverse the string, count words, and display the string. A constructor initializes the string.
 
 2. **Reversing the String:**  
    The `inverserChaine()` method iterates over the string and reconstructs it in reverse using a `for` loop.
 
-3. **Counting Words:**  
+   <img src="images/Screenshot10.png" alt="Image" width="600">
+
+4. **Counting Words:**  
    The `calculerNombreMots()` method splits the string into words using the regex `[,\\.\\s]+` and returns the resulting array length.
 
-4. **Main Class:**  
+   <img src="images/Screenshot11.png" alt="Image" width="600">
+
+6. **Main Class:**  
    The `Main` class contains the interactive menu logic. Users can enter a string, display it, reverse it, or count words. A `StringManipulator` object is created for each input string.
 
 - **Results Obtained:**  

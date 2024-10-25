@@ -113,6 +113,9 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
    The `calculerNombreMots()` method splits the string into words using the regex `[,\\.\\s]+` and returns the resulting array length.
 
    <img src="images/Screenshot11.png" alt="Image" width="600">
+   <img src="images/Screenshot12.png" alt="Image" width="600">
+   <img src="images/Screenshot13.png" alt="Image" width="600">
+   <img src="images/Screenshot14.png" alt="Image" width="600">
 
 6. **Main Class:**  
    The `Main` class contains the interactive menu logic. Users can enter a string, display it, reverse it, or count words. A `StringManipulator` object is created for each input string.
@@ -120,26 +123,38 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 - **Results Obtained:**  
   Examples of program results:
 
-   - **Input:**  
-   - **Display:**  
-   - **Reverse:**  
-   - **Word Count:**  
+   - **Input:**
+     <img src="images/Screenshot15.png" alt="Image" width="600">
+   - **Display:**
+     <img src="images/Screenshot16.png" alt="Image" width="600">
+   - **Reverse:**
+     <img src="images/Screenshot17.png" alt="Image" width="600">  
+   - **Word Count:**
+     <img src="images/Screenshot18.png" alt="Image" width="600">
 
 ---
 
 #### Exercise 4: Calculating Letter Occurrences in the Alphabet
 
+<img src="images/Screenshot19.png" alt="Image" width="600">
+
 1. **Creation of the `OccurenceAlphabet` Class:**  
    This class contains a method that takes a string, iterates through it, and counts occurrences of each alphabet letter.
 
-2. **`calculerOccurencesLettres()` Method:**  
+<img src="images/Screenshot20.png" alt="Image" width="600">
+
+3. **`calculerOccurencesLettres()` Method:**  
    This method iterates through the user-provided string, counts occurrences of each letter (case-insensitive), and displays these counts.
 
-3. **Main Class:**  
+  <img src="images/Screenshot21.png" alt="Image" width="600">
+  
+5. **Main Class:**  
    The main class prompts the user to enter a string and uses an `OccurenceAlphabet` object to display letter occurrences.
 
 - **Results Obtained:**  
   Program output examples:
+  
+  <img src="images/Screenshot22.png" alt="Image" width="600">
 
 ---
 

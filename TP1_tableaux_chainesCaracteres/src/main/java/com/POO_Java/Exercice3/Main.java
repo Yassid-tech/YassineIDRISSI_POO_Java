@@ -8,7 +8,6 @@ public class Main {
         StringManupulator stringManupulator = null;
         Scanner scanner = new Scanner(System.in);
         int choice;
-
         do {
             System.out.println("\n=== Menu Principal ===");
             System.out.println("1. Saisir");
@@ -16,7 +15,6 @@ public class Main {
             System.out.println("3. Inverser");
             System.out.println("4. Nombre de mots");
             System.out.println("5. Quitter");
-
 
             System.out.print("Veuillez entrer votre choix : ");
             choice = scanner.nextInt();
@@ -33,7 +31,8 @@ public class Main {
                 case 2:
                     System.out.println("----Vous avez sélectionné 'Afficher'----");
                     if (stringManupulator != null) {
-                        System.out.println("La chaîne saisie est la suivante -->  '" + stringManupulator.getChaine() + "'");
+                        System.out.println("La chaîne saisie est la suivante -->  '"
+                                + stringManupulator.getChaine() + "'");
                     } else {
                         System.out.println("Aucune chaîne n'a été saisie pour le moment.");
                     }
@@ -41,7 +40,8 @@ public class Main {
                 case 3:
                     System.out.println("----Vous avez sélectionné 'Inverser'----");
                     if (stringManupulator != null) {
-                        System.out.println("L'inverse de la chaîne saisie est -->  '" + stringManupulator.inverserChaine() + "'");
+                        System.out.println("L'inverse de la chaîne saisie est -->  '"
+                                + stringManupulator.inverserChaine() + "'");
                     } else {
                         System.out.println("Aucune chaîne n'a été saisie pour le moment.");
                     }
@@ -49,7 +49,8 @@ public class Main {
                 case 4:
                     System.out.println("----Vous avez sélectionné 'Nombre de mots'----");
                     if (stringManupulator != null) {
-                        System.out.println("Le nombre de mots de la chaîne est -->  " + stringManupulator.calculerNombreMots());
+                        System.out.println("Le nombre de mots de la chaîne est -->  "
+                                + stringManupulator.calculerNombreMots());
                     } else {
                         System.out.println("Aucune chaîne n'a été saisie pour le moment.");
                     }

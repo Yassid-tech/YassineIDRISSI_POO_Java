@@ -1,9 +1,7 @@
 package com.POO_Java.Exercice2;
 
 public class Conjugaison {
-
     private String verbe;
-
     public Conjugaison(String verbe) {
         this.verbe = verbe;
     }
@@ -14,9 +12,7 @@ public class Conjugaison {
         // cet indice permet d'identifier la position de la terminaison "er",
         // si il retourne -1 donc la terminaison est introuvable
         int index = verbe.lastIndexOf("er");
-
         String[] verbeConjugue = new String[pronoms.length];
-
         if (index != -1){
             // extraire le radical du verbe
             String radical =verbe.substring(0,index);
@@ -26,8 +22,6 @@ public class Conjugaison {
         } else {
             return new String[]{"Le verbe saisie n'est pas du premier groupe"};
         }
-
-
         return verbeConjugue;
     }
 }

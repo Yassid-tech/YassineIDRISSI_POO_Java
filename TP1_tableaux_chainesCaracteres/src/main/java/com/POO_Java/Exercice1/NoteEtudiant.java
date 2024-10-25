@@ -1,6 +1,5 @@
 package com.POO_Java.Exercice1;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class NoteEtudiant {

@@ -1,6 +1,6 @@
 # Lab Report TP1 - Arrays and Strings
 
-![Cover Image](https://drive.google.com/file/d/16hmqgqq6wwU6T-KPBQ2QiBP6WG8_A363/view?usp=drive_link)
+![Cover Image](images/TP1_POO.png)
 
 ## Master in Distributed Systems and Artificial Intelligence  
 **Academic Year:** 2024-2025  

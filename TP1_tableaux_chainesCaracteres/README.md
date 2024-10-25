@@ -77,17 +77,23 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 
 #### Exercise 2: Conjugating a First-Group Verb
 
+<img src="images/Screenshot6.png" alt="Image" width="600">
+
 1. **Creation of the `Conjugaison` Class:**  
    This class manages conjugation for first-group verbs in the present tense. The verb is passed as a parameter and stored in a private attribute.
 
 2. **Present Tense Conjugation:**  
    The `conjuguerAuPresent()` method verifies if the verb belongs to the first group (ending in "er"). If so, the stem is extracted, and the appropriate endings are added for each personal pronoun.
 
-3. **Main Class:**  
+   <img src="images/Screenshot7.png" alt="Image" width="600">
+
+4. **Main Class:**  
    The main class interacts with the user to enter the verb, displays the conjugation, creates a `Conjugaison` object, and calls the `conjuguerAuPresent()` method.
 
 - **Results Obtained:**  
   Sample output of the program:
+
+  <img src="images/Screenshot8.png" alt="Image" width="600">
 
 ---
 

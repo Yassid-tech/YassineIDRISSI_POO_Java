@@ -124,14 +124,21 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
   Examples of program results:
 
    - **Input:**
+     
     <img src="images/Screenshot15.png" alt="Image" width="600">
+    
    - **Display:**
+     
     <img src="images/Screenshot16.png" alt="Image" width="600">
+    
    - **Reverse:**
+     
     <img src="images/Screenshot17.png" alt="Image" width="600">  
+    
    - **Word Count:**
+     
     <img src="images/Screenshot18.png" alt="Image" width="600">
-
+    
 ---
 
 #### Exercise 4: Calculating Letter Occurrences in the Alphabet

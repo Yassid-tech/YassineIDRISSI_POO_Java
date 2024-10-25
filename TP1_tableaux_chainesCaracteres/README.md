@@ -1,153 +1,137 @@
-# **Lab Report 1: Arrays and Strings**
+# Lab Report TP1 - Object-Oriented Programming in Java
 
+## Master in Distributed Systems and Artificial Intelligence  
+**Academic Year:** 2024-2025  
+**Prepared by:** Yassine IDRISSI  
 
-![][image1]
+---
 
-## ![][image2] **Completed by: Yassine IDRISSI**
+### 1. Objectives of the Practical Assignment
 
-## **Module: Object-Oriented Programming in Java**
+The goal of this assignment is to manipulate arrays and strings in Java, involving:
 
-## **Academic Year: 2024-2025**
+- **Manipulating Arrays to Store and Process Numerical Data (Student Grades):**
+  - Sort an array.
+  - Calculate statistics from an array (average, maximum, minimum).
+  - Search for specific occurrences in an array.
 
-1. **Objectives of the Practical Assignment:**
+- **Manipulating Strings (Specifically First-Group French Verbs for Conjugation):**
+  - Identify and validate first-group verbs.
+  - Conjugate these verbs for different personal pronouns.
 
-   The objective of this practical assignment is to manipulate arrays and strings in Java. This involves:
+- **Performing Various Operations on a User-Entered String:**
+  - Implement an interactive menu for string management.
+  - Perform operations like reversing a string and counting words.
 
-- **Manipulate arrays to store and process numerical data (students' grades).**
+- **Counting Letter Occurrences in a String (Case-Insensitive):**
+  - Use an array to store and display occurrences of each alphabet letter.
 
-* Learn to sort an array.
-* Calculate statistics from an array (average, maximum, minimum).
-* Search for specific occurrences in an array.
+---
 
-- **Manipulate strings, particularly first-group verbs in French, for conjugation.**
+### 2. Materials and Development Environment
 
-* Identify and validate first-group verbs.
-* Conjugate these verbs with different personal pronouns.
+- **Programming Language:** Java  
+- **Development Environment:** IntelliJ  
+- **JDK:** 17  
 
-- **Perform various operations on a string entered by the user.**
+---
 
-* Implement an interactive menu for managing strings.
-* Perform operations such as reversing a string and counting words.
+### 3. Description of Exercises and Results
 
-- **Count occurrences of letters in a string without differentiating uppercase and lowercase.**
+#### Exercise 1: Manipulating Grades with an Array
 
-* Use an array to store and display the number of occurrences of each letter in the alphabet.
+1. **Creation of the `NoteEtudiant` Class:**  
+   This class manages a grade array and performs the required operations. The array is initialized with a fixed size for the number of students.
 
-2. **Materials and Development Environment:**
+2. **Adding Grades:**  
+   Grades are added via the `ajouterNote()` method, which checks if the array is full before adding a new grade.
 
-- **Programming Language:** Java
-- **Development Environment:** IntelliJ
-- **JDK** : 17
+   *Class "NoteEtudiant": Capture 2*
 
-3. **Description of Exercises and Results:**
-
-- **Exercise 1: Manipulating Grades with an Array:**
-
-_Class "NoteEtudiant": capture 1_
-
-1. **Creation of the `’NoteEtudiant’`Class:**
-
-   This class manages an array of grades and performs the required operations. The array is initialized with a fixed size corresponding to the number of students.
-
-2. **Adding Grades:**
-
-   Grades are added to the array through the ajouterNote() method, which checks if the array is full before adding a new grade.
-
-_Class "NoteEtudiant": capture 2_
-
-3. **Sorting Grades:**
-
+3. **Sorting Grades:**  
    Grades are sorted using the `Arrays.sort()` method.
 
-4. **Calculating the Average Grade:**
+4. **Calculating the Average Grade:**  
+   The average is calculated by summing all grades and dividing by the number of students.
 
-   The average is calculated by summing all the grades and dividing by the number of students.
+   **![][image3]**
 
-**![][image3]**
+   *Class "NoteEtudiant": Capture 3*
 
-_Class "NoteEtudiant": capture 3_
+5. **Determining Maximum and Minimum Grades:**  
+   Maximum and minimum values are determined by iterating through the array.
 
-5. **Determining Maximum and Minimum Grades:**
+6. **Counting Occurrences of a Specific Grade:**  
+   The occurrence of a specific grade is counted using a `for` loop.
 
-   The maximum and minimum values are determined by iterating through the array.
+   *Class "NoteEtudiant": Capture of Main Function*
 
-6. **Searching for a Specific Grade Occurrence:**
+- **Results Obtained:**  
+  Results obtained from running the program:
 
-   The number of occurrences of a specific grade is counted using a for loop.
+   *Class "NoteEtudiant": Program Execution Result Capture*
 
-_Class "NoteEtudiant": capture de la fonction main_
+---
 
-- **Results Obtained:**
+#### Exercise 2: Conjugating a First-Group Verb
 
-  The results obtained from running the program:
+1. **Creation of the `Conjugaison` Class:**  
+   This class manages conjugation for first-group verbs in the present tense. The verb is passed as a parameter and stored in a private attribute.
 
-_Class "NoteEtudiant": capture de résultat de l’exécution du programme_
+2. **Present Tense Conjugation:**  
+   The `conjuguerAuPresent()` method verifies if the verb belongs to the first group (ending in "er"). If so, the stem is extracted, and the appropriate endings are added for each personal pronoun.
 
-- **Exercise 2: Conjugating a First-Group Verb:**
+3. **Main Class:**  
+   The main class interacts with the user to enter the verb, displays the conjugation, creates a `Conjugaison` object, and calls the `conjuguerAuPresent()` method.
 
-1. **Creation of the `’Conjugaison’` Class:**
+- **Results Obtained:**  
+  Sample output of the program:
 
-   This class manages the conjugation of first-group verbs in the present tense. The verb is passed as a parameter when creating the object and is stored in a private attribute.
+---
 
-2. **Conjugating in the Present Tense:**
+#### Exercise 3: String Manipulation
 
-   The `conjuguerAuPresent()` method checks if the verb belongs to the first group by verifying if it ends in "er." If so, the stem is extracted, and the appropriate endings are added for each personal pronoun.
+1. **Creation of the `StringManipulator` Class:**  
+   This class includes methods to reverse the string, count words, and display the string. A constructor initializes the string.
 
-3. **`Main` Class:**
+2. **Reversing the String:**  
+   The `inverserChaine()` method iterates over the string and reconstructs it in reverse using a `for` loop.
 
-   The main class interacts with the user to enter the verb and displays the conjugation. An object of the `Conjugaison` class is created, and the `conjuguerAuPresent()` method is called to generate and display the conjugation.
+3. **Counting Words:**  
+   The `calculerNombreMots()` method splits the string into words using the regex `[,\\.\\s]+` and returns the resulting array length.
 
-- **Results Obtained:**
+4. **Main Class:**  
+   The `Main` class contains the interactive menu logic. Users can enter a string, display it, reverse it, or count words. A `StringManipulator` object is created for each input string.
 
-  Here are some examples of results obtained from running the program:
+- **Results Obtained:**  
+  Examples of program results:
 
-* **Exercise 3: String Manipulation:**
+   - **Input:**  
+   - **Display:**  
+   - **Reverse:**  
+   - **Word Count:**  
 
-1. **Creation of the `’StringManipulator’`Class:**
+---
 
-   This class contains three main methods: one to reverse the string, one to count the number of words, and another to display the entered string. A constructor is used to initialize the string.
+#### Exercise 4: Calculating Letter Occurrences in the Alphabet
 
-2. **Reversing the String:**
+1. **Creation of the `OccurenceAlphabet` Class:**  
+   This class contains a method that takes a string, iterates through it, and counts occurrences of each alphabet letter.
 
-   The `inverserChaine()` method iterates through the string and reconstructs it in reverse using a `for` loop.
+2. **`calculerOccurencesLettres()` Method:**  
+   This method iterates through the user-provided string, counts occurrences of each letter (case-insensitive), and displays these counts.
 
-3. **Calculating Word Count:**
+3. **Main Class:**  
+   The main class prompts the user to enter a string and uses an `OccurenceAlphabet` object to display letter occurrences.
 
-   The `calculerNombreMots()` method uses the regular expression `[,\\.\\s]+` to split the string into words and returns the length of the resulting array.
+- **Results Obtained:**  
+  Program output examples:
 
-4. **`Main` Class:**
+---
 
-   The `Main` class contains the logic for the interactive menu. The user can enter a string, display it, reverse it, or count the words through the menu. A `StringManipulator` object is created for each entered string.
+### 4. Conclusion
 
-- **Results Obtained:**
+This practical assignment helped consolidate our knowledge of array and string manipulation in Java. We developed programs for common operations—sorting, counting, and reversing strings—enhancing our Java programming skills.
 
-  Here are examples of results obtained from the program:
+---
 
-- **Entering:**
-
-- **Displaying:**
-- **Reversing:**
-
-- **Word Count:**
-
-* **Exercise 4: Calculating Letter Occurrences in the Alphabet:**
-
-1. **Creation of the `’OccurenceAlphabet’` Class:**
-
-   This class contains a main method that takes a string, iterates through it, and counts the occurrences of each letter in the alphabet.
-
-2. **`calculerOccurencesLettres()` Method:**
-
-   The `calculerOccurencesLettres()` method iterates through the string provided by the user, counts the occurrences of each letter in the alphabet (ignoring case), and displays these occurrences.
-
-3. **`Main` class:**
-
-   The main class interacts with the user to enter the string, then uses the `OccurenceAlphabet` object to display the letter occurrences.
-
-- **Results Obtained:**
-
-  Here are the results obtained from the program:
-
-4. **Conclusion:**
-
-   This practical assignment allowed us to strengthen our knowledge of manipulating arrays and strings in Java. We developed programs capable of performing common operations, such as sorting, counting, and reversing strings, while enhancing our Java programming skills.

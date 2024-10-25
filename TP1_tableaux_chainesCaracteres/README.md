@@ -1,6 +1,6 @@
 # Lab Report TP1 - Arrays and Strings
 
-<img src="images/TP1_POO.png" alt="Cover Image" width="500">
+<img src="images/TP1_POO.png" alt="Cover Image" width="800">
 
 ## Master in Distributed Systems and Artificial Intelligence  
 **Academic Year:** 2024-2025  

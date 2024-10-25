@@ -42,13 +42,15 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 
 #### Exercise 1: Manipulating Grades with an Array
 
+<img src="images/Screenshot1.png" alt="Image" width="600">
+
 1. **Creation of the `NoteEtudiant` Class:**  
    This class manages a grade array and performs the required operations. The array is initialized with a fixed size for the number of students.
 
 2. **Adding Grades:**  
    Grades are added via the `ajouterNote()` method, which checks if the array is full before adding a new grade.
 
-   *Class "NoteEtudiant": Capture 2*
+<img src="images/Screenshot2.png" alt="Image" width="600">
 
 3. **Sorting Grades:**  
    Grades are sorted using the `Arrays.sort()` method.
@@ -56,9 +58,7 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 4. **Calculating the Average Grade:**  
    The average is calculated by summing all grades and dividing by the number of students.
 
-   **![][image3]**
-
-   *Class "NoteEtudiant": Capture 3*
+<img src="images/Screenshot3.png" alt="Image" width="600">
 
 5. **Determining Maximum and Minimum Grades:**  
    Maximum and minimum values are determined by iterating through the array.
@@ -66,12 +66,12 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 6. **Counting Occurrences of a Specific Grade:**  
    The occurrence of a specific grade is counted using a `for` loop.
 
-   *Class "NoteEtudiant": Capture of Main Function*
+<img src="images/Screenshot4.png" alt="Image" width="600">
 
 - **Results Obtained:**  
   Results obtained from running the program:
 
-   *Class "NoteEtudiant": Program Execution Result Capture*
+<img src="images/Screenshot5.png" alt="Image" width="600">
 
 ---
 

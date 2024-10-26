@@ -167,7 +167,7 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 
 ### 4. Conclusion
 
-This practical assignment helped consolidate our knowledge of array and string manipulation in Java. We developed programs for common operations—sorting, counting, and reversing strings—enhancing our Java programming skills.
+This lab allowed us to consolidate our knowledge on manipulating arrays and strings in Java. We were able to develop programs capable of performing common operations, such as sorting, counting and reversing strings, while improving our Java programming skills.
 
 ---
 

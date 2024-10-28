@@ -1,6 +1,6 @@
 # Lab Report TP1 - Arrays and Strings
 
-![Cover Image](https://drive.google.com/file/d/16hmqgqq6wwU6T-KPBQ2QiBP6WG8_A363/view?usp=drive_link)
+<img src="images/TP1_POO.png" alt="Cover Image" width="800">
 
 ## Master in Distributed Systems and Artificial Intelligence  
 **Academic Year:** 2024-2025  
@@ -42,13 +42,15 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 
 #### Exercise 1: Manipulating Grades with an Array
 
+<img src="images/Screenshot1.png" alt="Image" width="600">
+
 1. **Creation of the `NoteEtudiant` Class:**  
    This class manages a grade array and performs the required operations. The array is initialized with a fixed size for the number of students.
 
 2. **Adding Grades:**  
    Grades are added via the `ajouterNote()` method, which checks if the array is full before adding a new grade.
 
-   *Class "NoteEtudiant": Capture 2*
+<img src="images/Screenshot2.png" alt="Image" width="600">
 
 3. **Sorting Grades:**  
    Grades are sorted using the `Arrays.sort()` method.
@@ -56,9 +58,7 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 4. **Calculating the Average Grade:**  
    The average is calculated by summing all grades and dividing by the number of students.
 
-   **![][image3]**
-
-   *Class "NoteEtudiant": Capture 3*
+<img src="images/Screenshot3.png" alt="Image" width="600">
 
 5. **Determining Maximum and Minimum Grades:**  
    Maximum and minimum values are determined by iterating through the array.
@@ -66,16 +66,18 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 6. **Counting Occurrences of a Specific Grade:**  
    The occurrence of a specific grade is counted using a `for` loop.
 
-   *Class "NoteEtudiant": Capture of Main Function*
+<img src="images/Screenshot4.png" alt="Image" width="600">
 
 - **Results Obtained:**  
   Results obtained from running the program:
 
-   *Class "NoteEtudiant": Program Execution Result Capture*
+<img src="images/Screenshot5.png" alt="Image" width="600">
 
 ---
 
 #### Exercise 2: Conjugating a First-Group Verb
+
+<img src="images/Screenshot6.png" alt="Image" width="600">
 
 1. **Creation of the `Conjugaison` Class:**  
    This class manages conjugation for first-group verbs in the present tense. The verb is passed as a parameter and stored in a private attribute.
@@ -83,15 +85,21 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 2. **Present Tense Conjugation:**  
    The `conjuguerAuPresent()` method verifies if the verb belongs to the first group (ending in "er"). If so, the stem is extracted, and the appropriate endings are added for each personal pronoun.
 
-3. **Main Class:**  
+<img src="images/Screenshot7.png" alt="Image" width="600">
+
+4. **Main Class:**  
    The main class interacts with the user to enter the verb, displays the conjugation, creates a `Conjugaison` object, and calls the `conjuguerAuPresent()` method.
 
 - **Results Obtained:**  
   Sample output of the program:
 
+<img src="images/Screenshot8.png" alt="Image" width="600">
+
 ---
 
 #### Exercise 3: String Manipulation
+
+<img src="images/Screenshot9.png" alt="Image" width="600">
 
 1. **Creation of the `StringManipulator` Class:**  
    This class includes methods to reverse the string, count words, and display the string. A constructor initializes the string.
@@ -99,41 +107,67 @@ The goal of this assignment is to manipulate arrays and strings in Java, involvi
 2. **Reversing the String:**  
    The `inverserChaine()` method iterates over the string and reconstructs it in reverse using a `for` loop.
 
-3. **Counting Words:**  
+<img src="images/Screenshot10.png" alt="Image" width="600">
+
+4. **Counting Words:**  
    The `calculerNombreMots()` method splits the string into words using the regex `[,\\.\\s]+` and returns the resulting array length.
 
-4. **Main Class:**  
+<img src="images/Screenshot11.png" alt="Image" width="600">
+<img src="images/Screenshot12.png" alt="Image" width="600">
+<img src="images/Screenshot13.png" alt="Image" width="600">
+<img src="images/Screenshot14.png" alt="Image" width="600">
+
+6. **Main Class:**  
    The `Main` class contains the interactive menu logic. Users can enter a string, display it, reverse it, or count words. A `StringManipulator` object is created for each input string.
 
 - **Results Obtained:**  
   Examples of program results:
 
-   - **Input:**  
-   - **Display:**  
-   - **Reverse:**  
-   - **Word Count:**  
-
+   - **Input:**
+     
+    <img src="images/Screenshot15.png" alt="Image" width="600">
+    
+   - **Display:**
+     
+    <img src="images/Screenshot16.png" alt="Image" width="600">
+    
+   - **Reverse:**
+     
+    <img src="images/Screenshot17.png" alt="Image" width="600">  
+    
+   - **Word Count:**
+     
+    <img src="images/Screenshot18.png" alt="Image" width="600">
+    
 ---
 
 #### Exercise 4: Calculating Letter Occurrences in the Alphabet
 
+<img src="images/Screenshot19.png" alt="Image" width="600">
+
 1. **Creation of the `OccurenceAlphabet` Class:**  
    This class contains a method that takes a string, iterates through it, and counts occurrences of each alphabet letter.
 
-2. **`calculerOccurencesLettres()` Method:**  
+<img src="images/Screenshot20.png" alt="Image" width="600">
+
+3. **`calculerOccurencesLettres()` Method:**  
    This method iterates through the user-provided string, counts occurrences of each letter (case-insensitive), and displays these counts.
 
-3. **Main Class:**  
+<img src="images/Screenshot21.png" alt="Image" width="600">
+  
+5. **Main Class:**  
    The main class prompts the user to enter a string and uses an `OccurenceAlphabet` object to display letter occurrences.
 
 - **Results Obtained:**  
   Program output examples:
+  
+<img src="images/Screenshot22.png" alt="Image" width="600">
 
 ---
 
 ### 4. Conclusion
 
-This practical assignment helped consolidate our knowledge of array and string manipulation in Java. We developed programs for common operations—sorting, counting, and reversing strings—enhancing our Java programming skills.
+This lab allowed us to consolidate our knowledge on manipulating arrays and strings in Java. We were able to develop programs capable of performing common operations, such as sorting, counting and reversing strings, while improving our Java programming skills.
 
 ---
 

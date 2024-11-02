@@ -8,9 +8,12 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // Déclarer et instancier une liste de trois ordinateurs
-        Ordinateur ordinateur1 = new Ordinateur("MacBook Air", "Apple", 15000, "Ultrabook léger", 10);
-        Ordinateur ordinateur2 = new Ordinateur("XPS 13", "Dell", 8900, "Ultrabook haute performance", 5);
-        Ordinateur ordinateur3 = new Ordinateur("ThinkPad X1", "Lenovo", 10000, "Ultrabook professionnel", 8);
+        Ordinateur ordinateur1 = new Ordinateur("MacBook Air", "Apple",
+                15000, "Ultrabook léger", 10);
+        Ordinateur ordinateur2 = new Ordinateur("XPS 13", "Dell",
+                8900, "Ultrabook haute performance", 5);
+        Ordinateur ordinateur3 = new Ordinateur("ThinkPad X1", "Lenovo",
+                10000, "Ultrabook professionnel", 8);
         List<Ordinateur> ordinateurs = new ArrayList<>();
         ordinateurs.add(ordinateur1);
         ordinateurs.add(ordinateur2);
@@ -21,7 +24,8 @@ public class Main {
         categorie.setOrdinateurList(ordinateurs);
 
         // Déclarer et instancier un client
-        Client client = new Client("IDRISSI", "Yassine", "Kasbah des Oudayas, rue Jirara", "idrissi@example.com", "Rabat", "0123456789");
+        Client client = new Client("IDRISSI", "Yassine",
+                "Kasbah des Oudayas, rue Jirara", "idrissi@example.com", "Rabat", "0123456789");
 
         // Déclarer et instancier une commande du client
         Commande commande = new Commande("cmd1", client, new Date(), "En cours");

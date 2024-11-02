@@ -19,5 +19,4 @@ public class Personne {
     public void afficher(){
         System.out.println("Nom: " + nom + ", Prénom: " + prenom + ", Email: " + email + ", Tel: " + tel + ", Age: " + age);
     }
-
 }

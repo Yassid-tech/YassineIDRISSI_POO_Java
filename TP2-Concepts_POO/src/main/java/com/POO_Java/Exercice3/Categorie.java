@@ -15,27 +15,21 @@ public class Categorie {
         this.description = description;
         this.ordinateurList = new ArrayList<>();
     }
-
     public String getNom() {
         return nom;
     }
-
     public void setNom(String nom) {
         this.nom = nom;
     }
-
     public String getDescription() {
         return description;
     }
-
     public void setDescription(String description) {
         this.description = description;
     }
-
     public List<Ordinateur> getOrdinateurList() {
         return ordinateurList;
     }
-
     public void setOrdinateurList(List<Ordinateur> ordinateurList) {
         this.ordinateurList = ordinateurList;
     }
@@ -63,7 +57,6 @@ public class Categorie {
             System.out.println("L'ordinateur que vous voulez ajouter existe deja");
         }
     }
-
     public void supprimerOrdinateur(String nom){
         int index = -1;
         for (Ordinateur ordinateur:ordinateurList){
@@ -78,7 +71,6 @@ public class Categorie {
             System.out.println("L'ordinateur que vous voulez supprimer n'existe pas dans la liste");
         }
     }
-
     public List<Ordinateur> rechercherParPrix(float prix){
         List<Ordinateur> ordinateursRechercher = new ArrayList<>();
         for (Ordinateur ordinateur:ordinateurList){

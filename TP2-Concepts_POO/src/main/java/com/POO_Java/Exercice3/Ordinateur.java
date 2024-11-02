@@ -19,35 +19,27 @@ public class Ordinateur {
     public void setNbrStock(int nbrStock) {
         this.nbrStock = nbrStock;
     }
-
     public String getNom() {
         return nom;
     }
-
     public String getMarque() {
         return marque;
     }
-
     public double getPrix() {
         return prix;
     }
-
     public String getDescription() {
         return description;
     }
-
     public int getNbrStock() {
         return nbrStock;
     }
-
     public void setNom(String nom) {
         this.nom = nom;
     }
-
     public void setMarque(String marque) {
         this.marque = marque;
     }
-
     public void setPrix(double prix) {
         this.prix = prix;
     }

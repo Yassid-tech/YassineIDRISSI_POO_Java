@@ -15,35 +15,27 @@ public class Commande {
         this.date = date;
         this.etatCommande = etatCommande;
     }
-
     public String getReference() {
         return reference;
     }
-
     public void setReference(String reference) {
         this.reference = reference;
     }
-
     public Client getClient() {
         return client;
     }
-
     public void setClient(Client client) {
         this.client = client;
     }
-
     public Date getDate() {
         return date;
     }
-
     public void setDate(Date date) {
         this.date = date;
     }
-
     public String getEtatCommande() {
         return etatCommande;
     }
-
     public void setEtatCommande(String etatCommande) {
         this.etatCommande = etatCommande;
     }

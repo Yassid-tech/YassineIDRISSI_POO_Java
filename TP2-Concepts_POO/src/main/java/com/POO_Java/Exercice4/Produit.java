@@ -1,7 +1,6 @@
 package com.POO_Java.Exercice4;
 
 public class Produit {
-
     private long id;
     private String nom;
     private String marque;
@@ -17,11 +16,39 @@ public class Produit {
         this.description = description;
         this.nbrStock = nbrStock;
     }
-
     public long getId() {
         return id;
     }
-
+    public String getNom() {
+        return nom;
+    }
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+    public String getMarque() {
+        return marque;
+    }
+    public void setMarque(String marque) {
+        this.marque = marque;
+    }
+    public float getPrix() {
+        return prix;
+    }
+    public void setPrix(float prix) {
+        this.prix = prix;
+    }
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    public int getNbrStock() {
+        return nbrStock;
+    }
+    public void setNbrStock(int nbrStock) {
+        this.nbrStock = nbrStock;
+    }
     @Override
     public String toString() {
         return "Produit{" +
@@ -31,45 +58,5 @@ public class Produit {
                 ", description='" + description + '\'' +
                 ", nbrStock=" + nbrStock +
                 '}';
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public String getMarque() {
-        return marque;
-    }
-
-    public void setMarque(String marque) {
-        this.marque = marque;
-    }
-
-    public float getPrix() {
-        return prix;
-    }
-
-    public void setPrix(float prix) {
-        this.prix = prix;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public int getNbrStock() {
-        return nbrStock;
-    }
-
-    public void setNbrStock(int nbrStock) {
-        this.nbrStock = nbrStock;
     }
 }

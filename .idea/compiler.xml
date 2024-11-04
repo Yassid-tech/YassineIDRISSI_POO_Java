@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="TP1_tableaux_chainesCaracteres" />
         <module name="TP2-Concepts_POO" />
+        <module name="TP3-Gestion_des_exceptions" />
       </profile>
     </annotationProcessing>
   </component>

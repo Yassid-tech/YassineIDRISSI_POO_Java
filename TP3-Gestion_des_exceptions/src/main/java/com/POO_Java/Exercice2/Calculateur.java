@@ -1,7 +1,7 @@
 package com.POO_Java.Exercice2;
 
-import com.POO_Java.Exercice1.TropViteException;
 import com.POO_Java.Exercice1.Vehicule;
+import com.POO_Java.Exercice1.TropViteException;
 
 public class Calculateur {
     public Calculateur() {

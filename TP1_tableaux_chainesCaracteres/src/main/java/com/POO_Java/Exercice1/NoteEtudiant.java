@@ -1,4 +1,4 @@
-package com.POO_Java.Exercice1_Collections;
+package com.POO_Java.Exercice1;
 
 import java.util.Arrays;
 

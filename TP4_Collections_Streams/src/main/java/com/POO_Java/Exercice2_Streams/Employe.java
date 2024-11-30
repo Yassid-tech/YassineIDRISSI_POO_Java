@@ -12,6 +12,15 @@ public class Employe {
         this.salaire = salaire;
     }
 
+    @Override
+    public String toString() {
+        return "Employe{" +
+                "nom='" + nom + '\'' +
+                ", departement='" + departement + '\'' +
+                ", salaire=" + salaire +
+                '}';
+    }
+
     public String getNom() {
         return nom;
     }
@@ -34,14 +43,5 @@ public class Employe {
 
     public void setSalaire(double salaire) {
         this.salaire = salaire;
-    }
-
-    @Override
-    public String toString() {
-        return "Employe{" +
-                "nom='" + nom + '\'' +
-                ", departement='" + departement + '\'' +
-                ", salaire=" + salaire +
-                '}';
     }
 }

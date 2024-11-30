@@ -33,7 +33,8 @@ public class OperationsSurMots {
                 .collect(Collectors.toList());
         System.out.println("Mots inversés : " + listeInverse);
 
-        // Filtrer les chaînes qui contiennent la lettre "e" et aplatir chaque chaîne en une liste de ses caractères
+        // Filtrer les chaînes qui contiennent la lettre "e" et
+        // aplatir chaque chaîne en une liste de ses caractères
         List<List<Character>> listesDeCaracteresAvecE = listeMots.stream()
                 .filter(mot -> mot.contains("e"))
                 .map(mot -> mot.chars()
@@ -57,14 +58,16 @@ public class OperationsSurMots {
         System.out.println("Longueur de chaque mot : " + longueursDesMots);
 
 
-        // Transformer chaque chaîne en une liste de ses caractères, puis aplatir toutes les listes en une seule liste de caractères
+        // Transformer chaque chaîne en une liste de ses caractères,
+        // puis aplatir toutes les listes en une seule liste de caractères
         List<Character> tousLesCaracteres = listeMots.stream()
                 .flatMap(mot -> mot.chars().mapToObj(c -> (char) c))
                 .collect(Collectors.toList());
         System.out.println("Tous les caractères aplatis : " + tousLesCaracteres);
 
 
-        // À partir d'une liste de mots, transformer chaque nom en une chaîne de la forme "Nom - Index" où l'index représente la position du nom dans la liste
+        // À partir d'une liste de mots, transformer chaque nom en une chaîne
+        // de la forme "Nom - Index" où l'index représente la position du nom dans la liste
         List<String> motsAvecIndex = IntStream.range(0, listeMots.size())
                 .mapToObj(i -> listeMots.get(i) + " - " + i)
                 .collect(Collectors.toList());

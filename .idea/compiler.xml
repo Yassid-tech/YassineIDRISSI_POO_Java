@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TP5" />
         <module name="TP1_tableaux_chainesCaracteres" />
-        <module name="TP2-Concepts_POO" />
-        <module name="TP3-Gestion_des_exceptions" />
         <module name="TP4_Collections_Streams" />
         <module name="TP5_JavaFX" />
+        <module name="TP5" />
+        <module name="TP2-Concepts_POO" />
+        <module name="TP3-Gestion_des_exceptions" />
+        <module name="TP6_Genericite_IO" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -12,14 +12,12 @@ public class SignletonConnexionDB {
             // Explicitly load the MySQL JDBC driver
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            e.printStackTrace(System.err);
             throw new RuntimeException("Failed to load MySQL JDBC driver", e);
         }
     }
-
     public SignletonConnexionDB() {
     }
-
     public static Connection getConnection() {
         if (connection == null) {
             try {

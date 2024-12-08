@@ -11,7 +11,8 @@ public class MetierImpl implements IMetier{
 
     @Override
     public void addProfesseur(Professeur professeur) {
-        String query = "INSERT INTO Professeur(nom, prenom, cin, adresse, telephone, email, date_recrutement, id_deprat) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        String query = "INSERT INTO Professeur(nom, prenom, cin, adresse, telephone," +
+                " email, date_recrutement, id_deprat) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
             ps.setString(1, professeur.getNom());
             ps.setString(2, professeur.getPrenom());
@@ -19,7 +20,8 @@ public class MetierImpl implements IMetier{
             ps.setString(4, professeur.getAdresse());
             ps.setString(6, professeur.getEmail());
             ps.setString(5, professeur.getTelephone());
-            ps.setDate(7, new Date(professeur.getDateRecrutement().getTime()));
+            ps.setDate(7,
+                    new Date(professeur.getDateRecrutement().getTime()));
             ps.setInt(8, professeur.getIdDeprat());
             ps.executeUpdate();
         } catch (SQLException e) {
@@ -42,7 +44,9 @@ public class MetierImpl implements IMetier{
 
     @Override
     public Boolean updateProfesseur(Professeur professeur) {
-        String query = "UPDATE Professeur SET nom = ?, prenom = ?, cin = ?, adresse = ?, telephone = ?, email = ?, date_recrutement = ?, id_deprat = ? WHERE id_prof = ?";
+        String query = "UPDATE Professeur SET nom = ?, prenom = ?, cin = ?," +
+                " adresse = ?, telephone = ?, email = ?, date_recrutement = ?," +
+                " id_deprat = ? WHERE id_prof = ?";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
             ps.setString(1, professeur.getNom());
             ps.setString(2, professeur.getPrenom());
@@ -50,7 +54,8 @@ public class MetierImpl implements IMetier{
             ps.setString(4, professeur.getAdresse());
             ps.setString(5, professeur.getTelephone());
             ps.setString(6, professeur.getEmail());
-            ps.setDate(7, new Date(professeur.getDateRecrutement().getTime()));
+            ps.setDate(7,
+                    new Date(professeur.getDateRecrutement().getTime()));
             ps.setInt(8, professeur.getIdDeprat());
             ps.setInt(9, professeur.getIdProf());
             ps.executeUpdate();

@@ -127,7 +127,6 @@ public class ManagementController {
             String telephone = telephoneField.getText();
             Date dateRecrutement = Date.valueOf(dateRecrutementPicker.getValue());
             int idDepart = Integer.parseInt(idDepartField.getText());
-
             // Create a Professeur object
             Professeur professeur = new Professeur();
             professeur.setNom(nom);
@@ -138,10 +137,8 @@ public class ManagementController {
             professeur.setTelephone(telephone);
             professeur.setDateRecrutement(new java.util.Date(dateRecrutement.getTime()));
             professeur.setIdDeprat(idDepart);
-
             // Use MetierImpl to save the Professeur
             metier.addProfesseur(professeur);
-
             // Show success alert
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Success");

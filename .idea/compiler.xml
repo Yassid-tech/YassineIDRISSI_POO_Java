@@ -13,6 +13,7 @@
         <module name="TP2-Concepts_POO" />
         <module name="TP3-Gestion_des_exceptions" />
         <module name="TP6_Genericite_IO" />
+        <module name="TP7_Threads" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

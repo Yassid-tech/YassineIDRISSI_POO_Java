@@ -24,7 +24,7 @@ public class DossierContact {
         if (!directory.exists()) {
             // Créer le répertoire si nécessaire
             directory.mkdirs();
-            
+
         }
 
         File[] files = directory.listFiles();

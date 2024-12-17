@@ -9,6 +9,7 @@
         <module name="TP1_tableaux_chainesCaracteres" />
         <module name="TP4_Collections_Streams" />
         <module name="TP5_JavaFX" />
+        <module name="TP8_Sockets" />
         <module name="TP5" />
         <module name="TP2-Concepts_POO" />
         <module name="TP3-Gestion_des_exceptions" />

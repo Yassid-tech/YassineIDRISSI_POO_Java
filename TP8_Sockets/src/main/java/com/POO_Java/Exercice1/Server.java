@@ -19,11 +19,14 @@ public class Server {
                 System.out.println("En attente d'un joueur...");
 
                 try (Socket clientSocket = serverSocket.accept();
-                     BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-                     PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true)) {
+                     BufferedReader in = new BufferedReader(
+                             new InputStreamReader(clientSocket.getInputStream()));
+                     PrintWriter out = new PrintWriter(
+                             clientSocket.getOutputStream(), true)) {
 
                     System.out.println("Un joueur s'est connecté.");
-                    out.println("Bienvenue dans le jeu ! Devinez le nombre magique entre 0 et 100.");
+                    out.println("Bienvenue dans le jeu !" +
+                            " Devinez le nombre magique entre 0 et 100.");
 
                     String inputLine;
                     boolean gameWon = false;

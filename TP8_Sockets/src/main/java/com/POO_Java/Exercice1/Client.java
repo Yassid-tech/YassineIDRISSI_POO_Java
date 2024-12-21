@@ -12,9 +12,12 @@ public class Client {
         int port = 9191;
 
         try (Socket socket = new Socket(host, port);
-             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-             BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in))) {
+             BufferedReader in = new BufferedReader(
+                     new InputStreamReader(socket.getInputStream()));
+             PrintWriter out = new PrintWriter(
+                     socket.getOutputStream(), true);
+             BufferedReader userInput = new BufferedReader(
+                     new InputStreamReader(System.in))) {
 
             System.out.println("Connecté au serveur du jeu !");
             String serverMessage;
@@ -28,7 +31,7 @@ public class Client {
 
                 System.out.print("Votre réponse: ");
                 String userGuess = userInput.readLine();
-                out.println(userGuess); // Envoyer la réponse au serveur
+                out.println(userGuess);
             }
 
         } catch (IOException e) {
